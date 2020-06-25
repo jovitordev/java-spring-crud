@@ -1,0 +1,31 @@
+<html xmlns:th="http://thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml">
+      
+<head>
+	<title>Busca de tarefas</title>
+</head>
+
+<body>
+	<h1>Listando tarefas</h1>
+
+	<div th:each="tarefa: ${tarefasss}">
+	<table>
+		<tr>
+			<td><p th:text="${tarefa.id}"></p></td>
+			<td><p style="color:red" th:text="${tarefa.nomeTarefa}"></td>
+			<td><p th:text="${tarefa.descricaoTarefa}"></td>
+			<td><p th:text="${tarefa.nomeUsuario}"></td>
+			
+			
+		</tr>
+	
+	
+	
+	</table>
+	
+	
+	</div>
+	<a href="/">Voltar</a>
+	
+</body>
+</html>
